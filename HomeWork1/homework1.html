@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>v-for with li</title>
+</head>
+<body>
+<div id="homework1">
+    <input type="text" v-model="todo"><button @click="add">加入todo</button>
+    <ol>
+    <li v-for="item in items"  @click="del(item)">{{ item }}</li>
+   </ol>    
+</div>
+</body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="homework1.js"></script>
+</html>
